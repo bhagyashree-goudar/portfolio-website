@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #a5b4fc, #fbcfe8);  /* blue + pink */
+}
+
+
+/* Main Card */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+    min-height: 90vh;   /* 👈 THIS FIXES EMPTY SPACE */
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;   /* THIS FIXES OVERFLOW */
+}
+
+/* Profile Image */
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6366f1;
+    flex-shrink: 0;
+}
+
+.profile:hover {
+    transform: scale(1.10);
+}
+
+
+
+
+/* Name */
+h1 {
+    color: #1e3a8a;
+}
+
+/* Bio */
+.bio {
+    color: #475569;
+}
+
+/* Section Titles */
+h2 {
+    text-align: left;
+    margin-top: 25px;
+    border-bottom: 2px solid #c7d2fe;
+    padding-bottom: 5px;
+    color: #3730a3;
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #4338ca;
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+/* Projects */
+.project {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Buttons */
+.project a,
+button {
+    background: linear-gradient(135deg, #6366f1, #ec4899); /* blue + pink */
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.project a:hover,
+button:hover {
+    opacity: 0.9;
+}
+
+
+/* FORM ALIGNMENT */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+input, textarea {
+    width: 100%;
+}
